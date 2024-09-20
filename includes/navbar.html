@@ -1,0 +1,71 @@
+<head>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <style>
+        .navbar-brand img {
+            height: 70px;
+            /* Ajusta el tamaño del logo según tus necesidades */
+        }
+
+        .bg-marino {
+            background-color: rgb(27, 57, 106);
+        }
+        .redondeado{
+            border-radius: 30px;
+            justify-content: space-around; 
+            overflow: hidden; 
+        }
+        .borde{
+            border-right: 2px solid rgb(27, 57, 106);
+        }
+        ul li a.btn-blanco {
+          background-color: rgb(255, 255, 255);
+          font-weight: bold;
+          text-decoration: none;
+          color: rgb(27, 57, 106);
+          padding: 5px;
+          border-radius: 15px;
+      }
+      ul li a.btn-blanco:hover{
+        background-color: rgb(71, 132, 230); 
+        color: white;/* Cambia a un color más claro al pasar el mouse */
+      }
+
+        @media(max-width:858px){
+            img.pe-3.borde.movil {
+                height: 50px;
+            }
+            img.ms-3.movil {
+                height: 50px;
+            }
+            
+
+        }
+    </style>
+</head>
+
+
+<nav class="navbar navbar-expand-lg px-3">
+    <a class="navbar-brand me-5">
+        <img class="pe-3 borde movil" src="../icons/tec.svg" alt="Logo">
+        <img class="ms-3 movil" src="../icons/tec comitan.jpg" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse bg-marino py-3 redondeado mx-3 margen" id="navbarSupportedContent">
+        <ul class="navbar-nav d-flex w-100 justify-content-around text-center">
+            <li class="nav-item">
+                <a class="nav-link text-white font-weight-bold" href="../index.html"><strong>Inicio</strong></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link text-white font-weight-bold" href="#"><Strong>Carreras</Strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-blanco px-5" href="#" role="button">Login</a>
+            </li>
+
+
+    </div>
+</nav>
