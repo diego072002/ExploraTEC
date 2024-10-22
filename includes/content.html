@@ -1,61 +1,50 @@
-<head>
-  <style>
-     
-      .btn-marino {
-          background-color: rgb(27, 57, 106);
-          font-weight: bold;
-          text-decoration: none;
-          color: white;
-          padding: 15px 50px;
-          border-radius: 15px;
-          transition: background-color 0.3s, transform 0.3s;
-          
-      }
-      .btn-marino:hover {
-    background-color: rgb(71, 132, 230); /* Cambia a un color más claro al pasar el mouse */
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-}
-  </style>
-</head>
-<div class="px-4 px-lg-5 my-3 py-4 ">
-    <div class="text-center text-black">
-      <h3 class="display-5 fw-bolder">Bienvenido al nuevo showroom virtual del TecNM Comitán</h3>
-      <p class="lead fw-normal text-black-50 mb-0">Elige algún campus que desees explorar</p>
-    </div>
+<link href="/css/vistas.css" rel="stylesheet">
+
+<div class="px-4 px-lg-5 my-3 py-4">
+  <div class="text-center text-black">
+    <h1 class="display-5 fw-bolder">Bienvenido al nuevo showroom virtual del TecNM Comitán</h1>
+    <p class="lead fw-normal text-black-50 mb-0">Elige algún campus que desees explorar</p>
   </div>
+</div>
 
 <div class="container-fluid">
 
   <div class="row">
     <!---Campus ciitic--->
     <div class="col-md-6">
-      <div class="card mb-5 mx-2 text-center">
+      <div class="card mb-5 mx-2 text-center border-dark">
         <h1 class="py-4">CIITIC</h1>
 
         <h6 class="py-4 px-4">Campus de Ingeniería Industrial y de Tecnologías de la Información y Comunicaciones</h6>
         <p>Aquí están la carreras:<br>
           Ingeniería en Sistema Computacionales<br>
-          Ingeniería Industrial
+          Ingeniería Industrial<br>
+          Además, se encuentra la coordinación de inglés
         </p>
         <div class="card-body my-4">
-          <a href="carreras/isc.html" class="btn-marino">Explorar</a>
+          <form method="POST" action="../principal/carreras.php">
+            <input type="hidden" name="campus" value="1">
+            <button type="submit" class="btn btn-marino">Explorar</button>
+          </form>
         </div>
       </div>
     </div>
     <!---Campus cidec--->
     <div class="col-md-6">
-      <div class="card mb-5 mx-2 text-center">
+      <div class="card mb-5 mx-2 text-center border-dark">
         <h1 class="py-4">CIDEC</h1>
         <h6 class="py-4 px-4">Campus de Ingeniería para el Desarrollo Empresarial y Comunitario</h6>
         <p>Aquí están la carreras:<br>
           Licenciatura en Administración<br>
           Ingeniería en Gestión Empresarial<br>
-          Ingeniería en Desarrollo Comunitario<br>
           Ingeniería en Innovación Agrícola Sustentable<br>
           Ingeniería en Agronomía
         </p>
         <div class="card-body my-4">
-          <a href="#" class="btn-marino">Explorar</a>
+          <form method="POST" action="../principal/carreras.php">
+            <input type="hidden" name="campus" value="2">
+            <button type="submit" class="btn btn-marino">Explorar</button>
+          </form>
         </div>
       </div>
     </div>
